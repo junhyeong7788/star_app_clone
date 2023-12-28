@@ -177,10 +177,10 @@ class FeedItem extends StatelessWidget {
               children: [
                 TextSpan(
                     text: feedData.userName,
-                    style: TextStyle(fontWeight: FontWeight.bold)),
+                    style: const TextStyle(fontWeight: FontWeight.bold)),
                 TextSpan(text: feedData.content),
               ],
-              style: TextStyle(color: Colors.black),
+              style: const TextStyle(color: Colors.black),
             ),
           ),
         ),
