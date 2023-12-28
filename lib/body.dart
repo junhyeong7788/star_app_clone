@@ -10,9 +10,9 @@ class InstaBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     if (index == 0) {
-      return HomeScreen();
+      return const HomeScreen();
     }
 
-    return SearchScreen();
+    return const SearchScreen();
   }
 }
