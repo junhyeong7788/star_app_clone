@@ -1,12 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:insta_clone_application/screen/home_screen.dart';
+import 'package:insta_clone_application/screen/search_screen.dart';
 
 class InstaBody extends StatelessWidget {
   final int index;
 
-  const InstaBody({super.key});
+  const InstaBody({required this.index, super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    if (index == 0) {
+      return HomeScreen();
+    }
+
+    return SearchScreen();
   }
 }
